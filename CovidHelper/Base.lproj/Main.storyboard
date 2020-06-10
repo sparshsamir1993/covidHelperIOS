@@ -18,7 +18,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVID HELPER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOd-UZ-oax">
                                 <rect key="frame" x="72" y="97" width="270" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.10362901889999999" blue="0.08245262095" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4w-H4-g21">
@@ -31,6 +31,9 @@
                                 <rect key="frame" x="10" y="233" width="394" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="getUserNameField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="qul-gG-Ftn"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPB-Mx-trD">
                                 <rect key="frame" x="20" y="287" width="97" height="21"/>
@@ -40,9 +43,32 @@
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gdZ-yB-Trw">
                                 <rect key="frame" x="20" y="318" width="374" height="216"/>
+                                <connections>
+                                    <action selector="dobSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="edf-g7-Utg"/>
+                                </connections>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ce-1A-3Zq">
+                                <rect key="frame" x="149.5" y="629" width="115" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Sp-Tb-cTe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please fill in name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JyI-ZK-KfI">
+                                <rect key="frame" x="103" y="559" width="208" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="j3l-zE-zZE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="4y5-9c-BQh"/>
                             <constraint firstItem="t4w-H4-g21" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="158" id="6ym-90-LQ6"/>
@@ -50,8 +76,10 @@
                             <constraint firstItem="j3l-zE-zZE" firstAttribute="top" secondItem="t4w-H4-g21" secondAttribute="bottom" constant="10" id="EU1-O7-Vyd"/>
                             <constraint firstItem="gdZ-yB-Trw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ex0-0r-mrc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gdZ-yB-Trw" secondAttribute="trailing" constant="20" id="IIc-RJ-yIl"/>
+                            <constraint firstItem="7Ce-1A-3Zq" firstAttribute="top" secondItem="gdZ-yB-Trw" secondAttribute="bottom" constant="95" id="MSU-c4-ZVd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t4w-H4-g21" secondAttribute="trailing" constant="349" id="Qaf-wT-OZG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j3l-zE-zZE" secondAttribute="trailing" constant="10" id="WE1-0T-Bko"/>
+                            <constraint firstItem="7Ce-1A-3Zq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X41-Ze-9mg"/>
                             <constraint firstItem="rOd-UZ-oax" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gdB-4b-27j"/>
                             <constraint firstItem="gdZ-yB-Trw" firstAttribute="top" secondItem="cPB-Mx-trD" secondAttribute="bottom" constant="10" id="rqc-ac-Qch"/>
                             <constraint firstItem="cPB-Mx-trD" firstAttribute="top" secondItem="j3l-zE-zZE" secondAttribute="bottom" constant="20" id="snf-rp-93s"/>
@@ -61,12 +89,26 @@
                             <constraint firstItem="gdZ-yB-Trw" firstAttribute="top" secondItem="cPB-Mx-trD" secondAttribute="bottom" constant="10" id="wts-UP-O1E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Wd0-mH-vW7" appends="YES" id="Y0b-UO-lgJ"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Personal Info" image="user" id="VPS-7X-zzJ"/>
+                    <connections>
+                        <outlet property="dobPicker" destination="gdZ-yB-Trw" id="1cY-iq-x8y"/>
+                        <outlet property="errorLabel" destination="JyI-ZK-KfI" id="1At-cQ-bAC"/>
+                        <outlet property="nameField" destination="j3l-zE-zZE" id="4ho-OQ-tEp"/>
+                        <outlet property="userSubmitButton" destination="7Ce-1A-3Zq" id="E14-lA-14s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Wd0-mH-vW7">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="IbR-Fr-Fac"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1172" y="-153"/>
+            <point key="canvasLocation" x="1171.0144927536232" y="-153.34821428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ccO-Ln-Wsh">
