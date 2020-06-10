@@ -175,14 +175,36 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J27-bm-7tO">
                                 <rect key="frame" x="187" y="555" width="51" height="31"/>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8g-ez-1sa">
+                                <rect key="frame" x="79" y="624" width="265" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01m-qL-9QC">
+                                <rect key="frame" x="149.5" y="660.5" width="115" height="70.5"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="questionsSubmitted:" destination="MgC-m4-jxi" eventType="touchUpInside" id="GWJ-zG-ghe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="01m-qL-9QC" firstAttribute="centerX" secondItem="SdS-VD-6Tl" secondAttribute="centerX" id="6vD-dh-jP2"/>
                             <constraint firstItem="Okv-fo-UJZ" firstAttribute="leading" secondItem="q6z-Br-00r" secondAttribute="leading" constant="20" id="6xd-8a-HE0"/>
                             <constraint firstItem="J27-bm-7tO" firstAttribute="top" secondItem="jrS-Pt-dtD" secondAttribute="bottom" constant="23" id="9O2-VG-s1E"/>
                             <constraint firstItem="Okv-fo-UJZ" firstAttribute="centerX" secondItem="SdS-VD-6Tl" secondAttribute="centerX" id="AFM-N0-LTa"/>
                             <constraint firstItem="TSq-BN-TLW" firstAttribute="top" secondItem="Okv-fo-UJZ" secondAttribute="bottom" constant="30" id="Auf-4D-Pbj"/>
+                            <constraint firstItem="q6z-Br-00r" firstAttribute="bottom" secondItem="01m-qL-9QC" secondAttribute="bottom" constant="82" id="B6h-wi-hsI"/>
+                            <constraint firstItem="r8g-ez-1sa" firstAttribute="leading" secondItem="q6z-Br-00r" secondAttribute="leading" constant="79" id="GVK-qG-o2C"/>
                             <constraint firstItem="LbI-7B-ead" firstAttribute="top" secondItem="IYs-4l-Hu1" secondAttribute="bottom" constant="20" id="GW6-VI-0J1"/>
+                            <constraint firstItem="r8g-ez-1sa" firstAttribute="top" secondItem="J27-bm-7tO" secondAttribute="bottom" constant="38" id="GhS-PX-REn"/>
                             <constraint firstItem="QNL-6v-K9h" firstAttribute="top" secondItem="TSq-BN-TLW" secondAttribute="bottom" constant="30" id="GvI-dm-eVK"/>
                             <constraint firstItem="LbI-7B-ead" firstAttribute="centerX" secondItem="SdS-VD-6Tl" secondAttribute="centerX" id="HUl-9C-tEP"/>
                             <constraint firstItem="LbI-7B-ead" firstAttribute="top" secondItem="IYs-4l-Hu1" secondAttribute="bottom" constant="20" id="IZd-LS-eIi"/>
@@ -203,6 +225,8 @@
                             <constraint firstItem="J27-bm-7tO" firstAttribute="leading" secondItem="CYH-Qm-Jbc" secondAttribute="leading" id="n8p-fl-3Tc"/>
                             <constraint firstItem="q6z-Br-00r" firstAttribute="trailing" secondItem="IYs-4l-Hu1" secondAttribute="trailing" constant="178" id="oHS-Bd-RKS"/>
                             <constraint firstItem="QNL-6v-K9h" firstAttribute="centerX" secondItem="SdS-VD-6Tl" secondAttribute="centerX" id="r2l-QE-ug9"/>
+                            <constraint firstItem="01m-qL-9QC" firstAttribute="top" secondItem="r8g-ez-1sa" secondAttribute="bottom" constant="36.5" id="rwU-bt-pf7"/>
+                            <constraint firstItem="q6z-Br-00r" firstAttribute="trailing" secondItem="r8g-ez-1sa" secondAttribute="trailing" constant="70" id="tU4-y9-S4F"/>
                             <constraint firstItem="LbI-7B-ead" firstAttribute="leading" secondItem="q6z-Br-00r" secondAttribute="leading" constant="20" id="uH1-FL-xOV"/>
                             <constraint firstItem="TSq-BN-TLW" firstAttribute="leading" secondItem="q6z-Br-00r" secondAttribute="leading" constant="182" id="uOK-jN-Uzr"/>
                             <constraint firstItem="q6z-Br-00r" firstAttribute="trailing" secondItem="LbI-7B-ead" secondAttribute="trailing" constant="20" id="uXj-tX-ALd"/>
@@ -216,6 +240,8 @@
                         <outlet property="answerOne" destination="TSq-BN-TLW" id="8XP-r6-jIt"/>
                         <outlet property="answerThree" destination="CYH-Qm-Jbc" id="RCy-Uh-QcP"/>
                         <outlet property="answerTwo" destination="IYs-4l-Hu1" id="fsQ-Lo-r5i"/>
+                        <outlet property="errorLabel" destination="r8g-ez-1sa" id="fGc-AZ-8ng"/>
+                        <outlet property="qSubmit" destination="01m-qL-9QC" id="Io0-qO-0OH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1M-Ws-Mqg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -245,7 +271,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="6AN-mr-cYf"/>
                     <connections>
-                        <outlet property="mapView" destination="I47-4G-wJb" id="6Vv-6x-r9e"/>
+                        <outlet property="mapView" destination="I47-4G-wJb" id="zcM-NC-5jP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bZ-dc-nwf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

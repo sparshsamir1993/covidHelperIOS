@@ -18,6 +18,7 @@
 		9901F4C0249050650014C397 /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4BF249050650014C397 /* QuestionnaireViewController.swift */; };
 		9901F4C32490A34B0014C397 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9901F4C22490A34B0014C397 /* MapKit.framework */; };
 		9901F4C52490A36A0014C397 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4C42490A36A0014C397 /* MapViewController.swift */; };
+		9901F4C7249177290014C397 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4C6249177290014C397 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		9901F4BF249050650014C397 /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireViewController.swift; sourceTree = "<group>"; };
 		9901F4C22490A34B0014C397 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9901F4C42490A36A0014C397 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9901F4C6249177290014C397 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				9901F49B249032D10014C397 /* Info.plist */,
 				9901F4BF249050650014C397 /* QuestionnaireViewController.swift */,
 				9901F4C42490A36A0014C397 /* MapViewController.swift */,
+				9901F4C6249177290014C397 /* Util.swift */,
 			);
 			path = CovidHelper;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9901F492249032CD0014C397 /* ViewController.swift in Sources */,
+				9901F4C7249177290014C397 /* Util.swift in Sources */,
 				9901F48E249032CD0014C397 /* AppDelegate.swift in Sources */,
 				9901F4C0249050650014C397 /* QuestionnaireViewController.swift in Sources */,
 				9901F4C52490A36A0014C397 /* MapViewController.swift in Sources */,

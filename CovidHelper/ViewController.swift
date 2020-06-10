@@ -28,11 +28,13 @@ class ViewController: UIViewController {
     
     @IBAction func infoSubmit(_ sender: UIButton) {
 //        let userDOB = dobPicker.date
+        
         let userName:String? = nameField.text
         if userName != "" && userName != nil{
             if  let arrayOfTabBarItems = tabBarController?.tabBar.items as AnyObject as? NSArray,let tabBarItem = arrayOfTabBarItems[1] as? UITabBarItem {
                 tabBarItem.isEnabled = true
             }
+            self.makeToast("Open questions tab")
             
         }else{
             errorLabel.text = "Please provide your name"
@@ -45,10 +47,13 @@ class ViewController: UIViewController {
         errorLabel.text = ""
         dobPicker.datePickerMode = UIDatePicker.Mode.date
         dobPicker.maximumDate = Date()
+        self.makeToast("Hi sparsh")
         userSubmitButton.layer.cornerRadius = 7
         if  let arrayOfTabBarItems = tabBarController?.tabBar.items as AnyObject as? NSArray,let tabBarItem = arrayOfTabBarItems[1] as? UITabBarItem {
             tabBarItem.isEnabled = false
         }
+        
+        
         
     }
     
