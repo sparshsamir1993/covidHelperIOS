@@ -15,6 +15,7 @@
 		9901F49A249032D10014C397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9901F498249032D10014C397 /* LaunchScreen.storyboard */; };
 		9901F4A5249032D10014C397 /* CovidHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4A4249032D10014C397 /* CovidHelperTests.swift */; };
 		9901F4B0249032D10014C397 /* CovidHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4AF249032D10014C397 /* CovidHelperUITests.swift */; };
+		9901F4C0249050650014C397 /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4BF249050650014C397 /* QuestionnaireViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9901F4AB249032D10014C397 /* CovidHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9901F4AF249032D10014C397 /* CovidHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidHelperUITests.swift; sourceTree = "<group>"; };
 		9901F4B1249032D10014C397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9901F4BF249050650014C397 /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				9901F496249032D10014C397 /* Assets.xcassets */,
 				9901F498249032D10014C397 /* LaunchScreen.storyboard */,
 				9901F49B249032D10014C397 /* Info.plist */,
+				9901F4BF249050650014C397 /* QuestionnaireViewController.swift */,
 			);
 			path = CovidHelper;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				9901F492249032CD0014C397 /* ViewController.swift in Sources */,
 				9901F48E249032CD0014C397 /* AppDelegate.swift in Sources */,
+				9901F4C0249050650014C397 /* QuestionnaireViewController.swift in Sources */,
 				9901F490249032CD0014C397 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

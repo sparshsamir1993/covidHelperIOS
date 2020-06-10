@@ -1,24 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rZv-rg-2wo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Personal Info-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CovidHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVID HELPER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOd-UZ-oax">
+                                <rect key="frame" x="72" y="97" width="270" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4w-H4-g21">
+                                <rect key="frame" x="20" y="202" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j3l-zE-zZE">
+                                <rect key="frame" x="10" y="233" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPB-Mx-trD">
+                                <rect key="frame" x="20" y="287" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gdZ-yB-Trw">
+                                <rect key="frame" x="20" y="318" width="374" height="216"/>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="j3l-zE-zZE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="4y5-9c-BQh"/>
+                            <constraint firstItem="t4w-H4-g21" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="158" id="6ym-90-LQ6"/>
+                            <constraint firstItem="t4w-H4-g21" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ACu-QT-SF8"/>
+                            <constraint firstItem="j3l-zE-zZE" firstAttribute="top" secondItem="t4w-H4-g21" secondAttribute="bottom" constant="10" id="EU1-O7-Vyd"/>
+                            <constraint firstItem="gdZ-yB-Trw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ex0-0r-mrc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gdZ-yB-Trw" secondAttribute="trailing" constant="20" id="IIc-RJ-yIl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t4w-H4-g21" secondAttribute="trailing" constant="349" id="Qaf-wT-OZG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j3l-zE-zZE" secondAttribute="trailing" constant="10" id="WE1-0T-Bko"/>
+                            <constraint firstItem="rOd-UZ-oax" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gdB-4b-27j"/>
+                            <constraint firstItem="gdZ-yB-Trw" firstAttribute="top" secondItem="cPB-Mx-trD" secondAttribute="bottom" constant="10" id="rqc-ac-Qch"/>
+                            <constraint firstItem="cPB-Mx-trD" firstAttribute="top" secondItem="j3l-zE-zZE" secondAttribute="bottom" constant="20" id="snf-rp-93s"/>
+                            <constraint firstItem="j3l-zE-zZE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tTW-Gw-dcl"/>
+                            <constraint firstItem="rOd-UZ-oax" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="uYP-ZD-l7O"/>
+                            <constraint firstItem="cPB-Mx-trD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vCu-mU-GPU"/>
+                            <constraint firstItem="gdZ-yB-Trw" firstAttribute="top" secondItem="cPB-Mx-trD" secondAttribute="bottom" constant="10" id="wts-UP-O1E"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Personal Info" image="user" id="VPS-7X-zzJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1172" y="-153"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ccO-Ln-Wsh">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="rZv-rg-2wo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Akp-Ki-6e4">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="SN3-Gi-vbt"/>
+                        <segue destination="MgC-m4-jxi" kind="relationship" relationship="viewControllers" id="iKk-oK-uvR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E73-uo-n5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
+        </scene>
+        <!--Questions-->
+        <scene sceneID="3QN-T6-9fr">
+            <objects>
+                <viewController id="MgC-m4-jxi" customClass="QuestionnaireViewController" customModule="CovidHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SdS-VD-6Tl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TSq-BN-TLW">
+                                <rect key="frame" x="182" y="169.5" width="52" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you experiencing difficulty breathing, chest pain or staying concious ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Okv-fo-UJZ">
+                                <rect key="frame" x="20" y="97" width="374" height="42.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="1" green="0.10362901889996168" blue="0.082452620947536026" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the past 10 days have you experienced fever, sore throat, runny nose?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNL-6v-K9h">
+                                <rect key="frame" x="20" y="230.5" width="374" height="42.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="1" green="0.10362901889999999" blue="0.08245262095" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IYs-4l-Hu1">
+                                <rect key="frame" x="187" y="303" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have sore headache, muscle ache, vomitting?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbI-7B-ead">
+                                <rect key="frame" x="20" y="354" width="374" height="42.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="1" green="0.10362901889999999" blue="0.08245262095" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CYH-Qm-Jbc">
+                                <rect key="frame" x="187" y="418.5" width="49" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrS-Pt-dtD">
+                                <rect key="frame" x="20" y="467.5" width="374" height="64.5"/>
+                                <string key="text">Did you return from travel outside of Canada withing the last 14 days or had close contact with someone tested positive of COVID-19?</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="1" green="0.10362901889999999" blue="0.08245262095" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J27-bm-7tO">
+                                <rect key="frame" x="187" y="555" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Okv-fo-UJZ" firstAttribute="leading" secondItem="q6z-Br-00r" secondAttribute="leading" constant="20" id="6xd-8a-HE0"/>
+                            <constraint firstItem="J27-bm-7tO" firstAttribute="top" secondItem="jrS-Pt-dtD" secondAttribute="bottom" constant="23" id="9O2-VG-s1E"/>
+                            <constraint firstItem="Okv-fo-UJZ" firstAttribute="centerX" secondItem="SdS-VD-6Tl" secondAttribute="centerX" id="AFM-N0-LTa"/>
+                            <constraint firstItem="TSq-BN-TLW" firstAttribute="top" secondItem="Okv-fo-UJZ" secondAttribute="bottom" constant="30" id="Auf-4D-Pbj"/>
+                            <constraint firstItem="LbI-7B-ead" firstAttribute="top" secondItem="IYs-4l-Hu1" secondAttribute="bottom" constant="20" id="GW6-VI-0J1"/>
+                            <constraint firstItem="QNL-6v-K9h" firstAttribute="top" secondItem="TSq-BN-TLW" secondAttribute="bottom" constant="30" id="GvI-dm-eVK"/>
+                            <constraint firstItem="LbI-7B-ead" firstAttribute="centerX" secondItem="SdS-VD-6Tl" secondAttribute="centerX" id="HUl-9C-tEP"/>
+                            <constraint firstItem="LbI-7B-ead" firstAttribute="top" secondItem="IYs-4l-Hu1" secondAttribute="bottom" constant="20" id="IZd-LS-eIi"/>
+                            <constraint firstItem="IYs-4l-Hu1" firstAttribute="top" secondItem="QNL-6v-K9h" secondAttribute="bottom" constant="30" id="Iqz-2f-PeO"/>
+                            <constraint firstItem="q6z-Br-00r" firstAttribute="trailing" secondItem="CYH-Qm-Jbc" secondAttribute="trailing" constant="180" id="JMs-pC-w9q"/>
+                            <constraint firstItem="q6z-Br-00r" firstAttribute="trailing" secondItem="QNL-6v-K9h" secondAttribute="trailing" constant="20" id="JsV-Qf-wLD"/>
+                            <constraint firstItem="QNL-6v-K9h" firstAttribute="leading" secondItem="q6z-Br-00r" secondAttribute="leading" constant="20" id="Kk1-EK-5L6"/>
+                            <constraint firstItem="IYs-4l-Hu1" firstAttribute="leading" secondItem="q6z-Br-00r" secondAttribute="leading" constant="187" id="Lm7-4V-qWn"/>
+                            <constraint firstItem="CYH-Qm-Jbc" firstAttribute="top" secondItem="LbI-7B-ead" secondAttribute="bottom" constant="22" id="NPk-cS-DR3"/>
+                            <constraint firstItem="q6z-Br-00r" firstAttribute="trailing" secondItem="Okv-fo-UJZ" secondAttribute="trailing" constant="20" id="Nc1-zK-I3o"/>
+                            <constraint firstItem="IYs-4l-Hu1" firstAttribute="top" secondItem="QNL-6v-K9h" secondAttribute="bottom" constant="30" id="XOT-Po-d5I"/>
+                            <constraint firstItem="CYH-Qm-Jbc" firstAttribute="leading" secondItem="q6z-Br-00r" secondAttribute="leading" constant="187" id="b9i-mh-4qS"/>
+                            <constraint firstItem="jrS-Pt-dtD" firstAttribute="leading" secondItem="q6z-Br-00r" secondAttribute="leading" constant="20" id="biX-HL-d7x"/>
+                            <constraint firstItem="q6z-Br-00r" firstAttribute="trailing" secondItem="TSq-BN-TLW" secondAttribute="trailing" constant="182" id="dD2-pO-bJf"/>
+                            <constraint firstItem="jrS-Pt-dtD" firstAttribute="top" secondItem="CYH-Qm-Jbc" secondAttribute="bottom" constant="18" id="dUD-nj-WAC"/>
+                            <constraint firstItem="jrS-Pt-dtD" firstAttribute="centerX" secondItem="SdS-VD-6Tl" secondAttribute="centerX" id="euu-7r-kEO"/>
+                            <constraint firstItem="q6z-Br-00r" firstAttribute="trailing" secondItem="jrS-Pt-dtD" secondAttribute="trailing" constant="20" id="kCB-2v-GeK"/>
+                            <constraint firstItem="J27-bm-7tO" firstAttribute="leading" secondItem="CYH-Qm-Jbc" secondAttribute="leading" id="n8p-fl-3Tc"/>
+                            <constraint firstItem="q6z-Br-00r" firstAttribute="trailing" secondItem="IYs-4l-Hu1" secondAttribute="trailing" constant="178" id="oHS-Bd-RKS"/>
+                            <constraint firstItem="QNL-6v-K9h" firstAttribute="centerX" secondItem="SdS-VD-6Tl" secondAttribute="centerX" id="r2l-QE-ug9"/>
+                            <constraint firstItem="LbI-7B-ead" firstAttribute="leading" secondItem="q6z-Br-00r" secondAttribute="leading" constant="20" id="uH1-FL-xOV"/>
+                            <constraint firstItem="TSq-BN-TLW" firstAttribute="leading" secondItem="q6z-Br-00r" secondAttribute="leading" constant="182" id="uOK-jN-Uzr"/>
+                            <constraint firstItem="q6z-Br-00r" firstAttribute="trailing" secondItem="LbI-7B-ead" secondAttribute="trailing" constant="20" id="uXj-tX-ALd"/>
+                            <constraint firstItem="Okv-fo-UJZ" firstAttribute="top" secondItem="q6z-Br-00r" secondAttribute="top" constant="53" id="yLS-Pu-qC7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q6z-Br-00r"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Questions" image="questions" id="I2r-8J-B3k"/>
+                    <connections>
+                        <outlet property="answerFour" destination="J27-bm-7tO" id="W9I-SU-xan"/>
+                        <outlet property="answerOne" destination="TSq-BN-TLW" id="8XP-r6-jIt"/>
+                        <outlet property="answerThree" destination="CYH-Qm-Jbc" id="RCy-Uh-QcP"/>
+                        <outlet property="answerTwo" destination="IYs-4l-Hu1" id="fsQ-Lo-r5i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c1M-Ws-Mqg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192.753623188406" y="517.63392857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="questions" width="25" height="25"/>
+        <image name="user" width="25" height="25"/>
+    </resources>
 </document>
