@@ -16,6 +16,8 @@
 		9901F4A5249032D10014C397 /* CovidHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4A4249032D10014C397 /* CovidHelperTests.swift */; };
 		9901F4B0249032D10014C397 /* CovidHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4AF249032D10014C397 /* CovidHelperUITests.swift */; };
 		9901F4C0249050650014C397 /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4BF249050650014C397 /* QuestionnaireViewController.swift */; };
+		9901F4C32490A34B0014C397 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9901F4C22490A34B0014C397 /* MapKit.framework */; };
+		9901F4C52490A36A0014C397 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4C42490A36A0014C397 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		9901F4AF249032D10014C397 /* CovidHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidHelperUITests.swift; sourceTree = "<group>"; };
 		9901F4B1249032D10014C397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9901F4BF249050650014C397 /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireViewController.swift; sourceTree = "<group>"; };
+		9901F4C22490A34B0014C397 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9901F4C42490A36A0014C397 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9901F4C32490A34B0014C397 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,7 @@
 				9901F4A3249032D10014C397 /* CovidHelperTests */,
 				9901F4AE249032D10014C397 /* CovidHelperUITests */,
 				9901F48B249032CD0014C397 /* Products */,
+				9901F4C12490A34B0014C397 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +115,7 @@
 				9901F498249032D10014C397 /* LaunchScreen.storyboard */,
 				9901F49B249032D10014C397 /* Info.plist */,
 				9901F4BF249050650014C397 /* QuestionnaireViewController.swift */,
+				9901F4C42490A36A0014C397 /* MapViewController.swift */,
 			);
 			path = CovidHelper;
 			sourceTree = "<group>";
@@ -129,6 +136,14 @@
 				9901F4B1249032D10014C397 /* Info.plist */,
 			);
 			path = CovidHelperUITests;
+			sourceTree = "<group>";
+		};
+		9901F4C12490A34B0014C397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9901F4C22490A34B0014C397 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +280,7 @@
 				9901F492249032CD0014C397 /* ViewController.swift in Sources */,
 				9901F48E249032CD0014C397 /* AppDelegate.swift in Sources */,
 				9901F4C0249050650014C397 /* QuestionnaireViewController.swift in Sources */,
+				9901F4C52490A36A0014C397 /* MapViewController.swift in Sources */,
 				9901F490249032CD0014C397 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
