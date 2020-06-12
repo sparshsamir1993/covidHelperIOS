@@ -21,7 +21,7 @@ class QuestionnaireViewController: UIViewController {
             errorLabel.text = "Call 911"
         }
         if answerTwo.isOn{
-            errorLabel.text = "Call 811"
+            errorLabel.text = "Call 911"
         }
         if answerThree.isOn{
             errorLabel.text = "Get tested immediately"
