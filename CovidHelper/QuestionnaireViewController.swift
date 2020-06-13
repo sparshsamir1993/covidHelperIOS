@@ -20,17 +20,17 @@ class QuestionnaireViewController: UIViewController {
         if answerOne.isOn {
             errorLabel.text = "Call 911"
         }
-        else if answerTwo.isOn{
-            errorLabel.text = "Call 911"
+        if answerTwo.isOn{
+            errorLabel.text = "Call 811"
         }
-        else if answerThree.isOn{
+        if answerThree.isOn{
             errorLabel.text = "Get tested immediately"
         }
-        else if answerFour.isOn{
+        if answerFour.isOn{
             errorLabel.text = "Get tested immediately"
         }
-        else{
-            errorLabel.text = "Please stay at home."
+        if !answerOne.isOn, !answerTwo.isOn, !answerThree.isOn, !answerFour.isOn {
+            errorLabel.text = "Please stay at home"
         }
     }
     
