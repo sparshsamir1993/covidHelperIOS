@@ -18,7 +18,8 @@ class MapViewCOntroller: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func addCustomAnnotation(coordinates coord: CLLocationCoordinate2D, named title: String, onMap mapView: MKMapView)->MKMapView{              // function takes in the mapView to set the annotation on, sets it and retuns the same updated mapView
+    func addCustomAnnotation(coordinates coord: CLLocationCoordinate2D, named title: String, onMap mapView: MKMapView)->MKMapView{
+        // function takes in the mapView to set the annotation on, sets it and retuns the same updated mapView
         let customPin = MKPointAnnotation() // this is for setting up a pin on the coordinates desired
         customPin.coordinate = coord
         customPin.title = title

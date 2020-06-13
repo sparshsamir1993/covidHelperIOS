@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9901F48E249032CD0014C397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F48D249032CD0014C397 /* AppDelegate.swift */; };
-		9901F490249032CD0014C397 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F48F249032CD0014C397 /* SceneDelegate.swift */; };
 		9901F492249032CD0014C397 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F491249032CD0014C397 /* ViewController.swift */; };
 		9901F495249032CD0014C397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9901F493249032CD0014C397 /* Main.storyboard */; };
 		9901F497249032D10014C397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9901F496249032D10014C397 /* Assets.xcassets */; };
@@ -19,6 +18,7 @@
 		9901F4C32490A34B0014C397 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9901F4C22490A34B0014C397 /* MapKit.framework */; };
 		9901F4C52490A36A0014C397 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4C42490A36A0014C397 /* MapViewController.swift */; };
 		9901F4C7249177290014C397 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4C6249177290014C397 /* Util.swift */; };
+		990E36B5249493BD00930550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990E36B4249493BD00930550 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 /* Begin PBXFileReference section */
 		9901F48A249032CD0014C397 /* CovidHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9901F48D249032CD0014C397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9901F48F249032CD0014C397 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9901F491249032CD0014C397 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9901F494249032CD0014C397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9901F496249032D10014C397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		9901F4C22490A34B0014C397 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9901F4C42490A36A0014C397 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9901F4C6249177290014C397 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		990E36B4249493BD00930550 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				9901F48D249032CD0014C397 /* AppDelegate.swift */,
-				9901F48F249032CD0014C397 /* SceneDelegate.swift */,
 				9901F491249032CD0014C397 /* ViewController.swift */,
 				9901F493249032CD0014C397 /* Main.storyboard */,
 				9901F496249032D10014C397 /* Assets.xcassets */,
@@ -119,6 +118,7 @@
 				9901F4BF249050650014C397 /* QuestionnaireViewController.swift */,
 				9901F4C42490A36A0014C397 /* MapViewController.swift */,
 				9901F4C6249177290014C397 /* Util.swift */,
+				990E36B4249493BD00930550 /* SceneDelegate.swift */,
 			);
 			path = CovidHelper;
 			sourceTree = "<group>";
@@ -285,7 +285,7 @@
 				9901F48E249032CD0014C397 /* AppDelegate.swift in Sources */,
 				9901F4C0249050650014C397 /* QuestionnaireViewController.swift in Sources */,
 				9901F4C52490A36A0014C397 /* MapViewController.swift in Sources */,
-				9901F490249032CD0014C397 /* SceneDelegate.swift in Sources */,
+				990E36B5249493BD00930550 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

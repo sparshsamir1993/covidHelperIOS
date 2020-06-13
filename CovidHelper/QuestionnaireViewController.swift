@@ -9,6 +9,10 @@
 
 import UIKit
 class QuestionnaireViewController: UIViewController {
+    @IBOutlet var qOne: UILabel!
+    @IBOutlet var qTwo: UILabel!
+    @IBOutlet var qThree: UILabel!
+    @IBOutlet var qFour: UILabel!
     @IBOutlet var answerOne: UISwitch!
     @IBOutlet var answerTwo: UISwitch!
     @IBOutlet var answerThree: UISwitch!
@@ -16,7 +20,7 @@ class QuestionnaireViewController: UIViewController {
     @IBOutlet var qSubmit: UIButton!
     @IBOutlet var errorLabel: UILabel!
     
-    @IBAction func questionsSubmitted(_ sender: UIButton) {
+    @IBAction func questionsSubmitted(_ sender: UIButton) {// function that runs when submit button is clicked
         if answerOne.isOn {
             errorLabel.text = "Call 911"
         }
