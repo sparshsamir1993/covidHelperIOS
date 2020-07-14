@@ -49,7 +49,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         errorLabel.text = ""
         dobPicker.datePickerMode = UIDatePicker.Mode.date
         dobPicker.maximumDate = Date()
-        self.makeToast("Hi sparsh")
         nameField.delegate = self
         userSubmitButton.isEnabled = false
         userSubmitButton.alpha = 0.4

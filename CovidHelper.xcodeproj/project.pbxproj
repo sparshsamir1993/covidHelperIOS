@@ -18,7 +18,11 @@
 		9901F4C32490A34B0014C397 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9901F4C22490A34B0014C397 /* MapKit.framework */; };
 		9901F4C52490A36A0014C397 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4C42490A36A0014C397 /* MapViewController.swift */; };
 		9901F4C7249177290014C397 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9901F4C6249177290014C397 /* Util.swift */; };
-		990E36B5249493BD00930550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990E36B4249493BD00930550 /* SceneDelegate.swift */; };
+		99B33F6224BA7CCE005B23D3 /* HospitalListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B33F6124BA7CCE005B23D3 /* HospitalListController.swift */; };
+		99B33F6424BA7F32005B23D3 /* HospitalListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B33F6324BA7F32005B23D3 /* HospitalListStore.swift */; };
+		99B33F6624BA8080005B23D3 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B33F6524BA8080005B23D3 /* Hospital.swift */; };
+		99B33F6824BBCE4A005B23D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B33F6724BBCE4A005B23D3 /* SceneDelegate.swift */; };
+		99B33F6A24BD13A3005B23D3 /* HospitalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B33F6924BD13A3005B23D3 /* HospitalListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +60,11 @@
 		9901F4C22490A34B0014C397 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9901F4C42490A36A0014C397 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9901F4C6249177290014C397 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		990E36B4249493BD00930550 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		99B33F6124BA7CCE005B23D3 /* HospitalListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListController.swift; sourceTree = "<group>"; };
+		99B33F6324BA7F32005B23D3 /* HospitalListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListStore.swift; sourceTree = "<group>"; };
+		99B33F6524BA8080005B23D3 /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		99B33F6724BBCE4A005B23D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		99B33F6924BD13A3005B23D3 /* HospitalListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +126,11 @@
 				9901F4BF249050650014C397 /* QuestionnaireViewController.swift */,
 				9901F4C42490A36A0014C397 /* MapViewController.swift */,
 				9901F4C6249177290014C397 /* Util.swift */,
-				990E36B4249493BD00930550 /* SceneDelegate.swift */,
+				99B33F6124BA7CCE005B23D3 /* HospitalListController.swift */,
+				99B33F6324BA7F32005B23D3 /* HospitalListStore.swift */,
+				99B33F6524BA8080005B23D3 /* Hospital.swift */,
+				99B33F6724BBCE4A005B23D3 /* SceneDelegate.swift */,
+				99B33F6924BD13A3005B23D3 /* HospitalListCell.swift */,
 			);
 			path = CovidHelper;
 			sourceTree = "<group>";
@@ -282,10 +294,14 @@
 			files = (
 				9901F492249032CD0014C397 /* ViewController.swift in Sources */,
 				9901F4C7249177290014C397 /* Util.swift in Sources */,
+				99B33F6824BBCE4A005B23D3 /* SceneDelegate.swift in Sources */,
+				99B33F6A24BD13A3005B23D3 /* HospitalListCell.swift in Sources */,
 				9901F48E249032CD0014C397 /* AppDelegate.swift in Sources */,
 				9901F4C0249050650014C397 /* QuestionnaireViewController.swift in Sources */,
+				99B33F6224BA7CCE005B23D3 /* HospitalListController.swift in Sources */,
+				99B33F6624BA8080005B23D3 /* Hospital.swift in Sources */,
 				9901F4C52490A36A0014C397 /* MapViewController.swift in Sources */,
-				990E36B5249493BD00930550 /* SceneDelegate.swift in Sources */,
+				99B33F6424BA7F32005B23D3 /* HospitalListStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
