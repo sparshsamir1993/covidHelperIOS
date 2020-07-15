@@ -23,6 +23,7 @@
 		99B33F6624BA8080005B23D3 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B33F6524BA8080005B23D3 /* Hospital.swift */; };
 		99B33F6824BBCE4A005B23D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B33F6724BBCE4A005B23D3 /* SceneDelegate.swift */; };
 		99B33F6A24BD13A3005B23D3 /* HospitalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B33F6924BD13A3005B23D3 /* HospitalListCell.swift */; };
+		99B33F6C24BE4A91005B23D3 /* HospitalDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B33F6B24BE4A91005B23D3 /* HospitalDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		99B33F6524BA8080005B23D3 /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
 		99B33F6724BBCE4A005B23D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		99B33F6924BD13A3005B23D3 /* HospitalListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListCell.swift; sourceTree = "<group>"; };
+		99B33F6B24BE4A91005B23D3 /* HospitalDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,14 +125,15 @@
 				9901F496249032D10014C397 /* Assets.xcassets */,
 				9901F498249032D10014C397 /* LaunchScreen.storyboard */,
 				9901F49B249032D10014C397 /* Info.plist */,
-				9901F4BF249050650014C397 /* QuestionnaireViewController.swift */,
 				9901F4C42490A36A0014C397 /* MapViewController.swift */,
 				9901F4C6249177290014C397 /* Util.swift */,
-				99B33F6124BA7CCE005B23D3 /* HospitalListController.swift */,
 				99B33F6324BA7F32005B23D3 /* HospitalListStore.swift */,
+				9901F4BF249050650014C397 /* QuestionnaireViewController.swift */,
 				99B33F6524BA8080005B23D3 /* Hospital.swift */,
 				99B33F6724BBCE4A005B23D3 /* SceneDelegate.swift */,
 				99B33F6924BD13A3005B23D3 /* HospitalListCell.swift */,
+				99B33F6124BA7CCE005B23D3 /* HospitalListController.swift */,
+				99B33F6B24BE4A91005B23D3 /* HospitalDetailController.swift */,
 			);
 			path = CovidHelper;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				9901F4C7249177290014C397 /* Util.swift in Sources */,
 				99B33F6824BBCE4A005B23D3 /* SceneDelegate.swift in Sources */,
 				99B33F6A24BD13A3005B23D3 /* HospitalListCell.swift in Sources */,
+				99B33F6C24BE4A91005B23D3 /* HospitalDetailController.swift in Sources */,
 				9901F48E249032CD0014C397 /* AppDelegate.swift in Sources */,
 				9901F4C0249050650014C397 /* QuestionnaireViewController.swift in Sources */,
 				99B33F6224BA7CCE005B23D3 /* HospitalListController.swift in Sources */,

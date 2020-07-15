@@ -17,44 +17,49 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HospitalListCell" id="Clv-Bv-Vxk" customClass="HospitalListCell" customModule="CovidHelper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Clv-Bv-Vxk" id="zOq-T0-BqP">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YC-7f-I3V">
-                                            <rect key="frame" x="24" y="-2" width="45" height="22"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="25" y="1" width="51.5" height="22"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJO-ws-nMb">
-                                            <rect key="frame" x="24" y="24" width="61" height="21.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="27" y="24" width="45" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="contact" translatesAutoresizingMaskIntoConstraints="NO" id="DUq-nm-ilU">
-                                            <rect key="frame" x="5" y="26" width="16" height="17"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact" translatesAutoresizingMaskIntoConstraints="NO" id="DUq-nm-ilU">
+                                            <rect key="frame" x="5" y="28" width="16" height="13"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="16" id="V56-6S-YVK"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="5YC-7f-I3V" firstAttribute="top" secondItem="zOq-T0-BqP" secondAttribute="topMargin" constant="-13" id="0KM-3Y-mgY"/>
-                                        <constraint firstItem="fJO-ws-nMb" firstAttribute="top" secondItem="5YC-7f-I3V" secondAttribute="bottom" constant="4" id="LTI-KK-oT0"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5YC-7f-I3V" secondAttribute="trailing" constant="20" symbolic="YES" id="016-I5-R1F"/>
+                                        <constraint firstItem="fJO-ws-nMb" firstAttribute="top" secondItem="5YC-7f-I3V" secondAttribute="bottom" constant="1" id="93N-ZE-JHv"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fJO-ws-nMb" secondAttribute="trailing" constant="20" symbolic="YES" id="Pbf-Gi-c5u"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="fJO-ws-nMb" secondAttribute="bottom" constant="-11.5" id="VJN-9m-Uvq"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="DUq-nm-ilU" secondAttribute="bottom" constant="-7.5" id="Vtk-7w-GL1"/>
-                                        <constraint firstItem="5YC-7f-I3V" firstAttribute="leading" secondItem="fJO-ws-nMb" secondAttribute="leading" id="Y28-LQ-Idf"/>
+                                        <constraint firstItem="DUq-nm-ilU" firstAttribute="leading" secondItem="zOq-T0-BqP" secondAttribute="leadingMargin" constant="-11" id="aC7-U6-pb2"/>
                                         <constraint firstItem="DUq-nm-ilU" firstAttribute="centerY" secondItem="fJO-ws-nMb" secondAttribute="centerY" id="cDb-Ne-n0g"/>
+                                        <constraint firstItem="5YC-7f-I3V" firstAttribute="top" secondItem="zOq-T0-BqP" secondAttribute="topMargin" constant="-10" id="eGh-RP-HVT"/>
                                         <constraint firstItem="DUq-nm-ilU" firstAttribute="top" secondItem="zOq-T0-BqP" secondAttribute="topMargin" constant="17" id="hFy-ef-peV"/>
+                                        <constraint firstItem="5YC-7f-I3V" firstAttribute="leading" secondItem="zOq-T0-BqP" secondAttribute="leadingMargin" constant="9" id="ljl-g1-OqL"/>
                                         <constraint firstItem="fJO-ws-nMb" firstAttribute="leading" secondItem="DUq-nm-ilU" secondAttribute="trailing" constant="6" id="n92-zT-Rc7"/>
-                                        <constraint firstItem="5YC-7f-I3V" firstAttribute="leading" secondItem="zOq-T0-BqP" secondAttribute="leadingMargin" constant="8" id="rIf-rG-kWA"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="contactLabel" destination="fJO-ws-nMb" id="Nzc-EG-sLH"/>
                                     <outlet property="nameLabel" destination="5YC-7f-I3V" id="KPI-M6-r8D"/>
-                                    <segue destination="Q8X-be-RbG" kind="show" id="MCu-3J-xfU"/>
+                                    <segue destination="LlA-8G-B66" kind="showDetail" identifier="showHospital" id="sic-7i-boh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -69,23 +74,107 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zv-CB-GKq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="421.60000000000002" y="-910.79460269865069"/>
+            <point key="canvasLocation" x="370" y="-911"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="g1z-LI-Nfm">
+        <!--Hospital Detail Controller-->
+        <scene sceneID="a9Z-54-pbG">
             <objects>
-                <viewController id="Q8X-be-RbG" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wSP-MP-JGF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="LlA-8G-B66" customClass="HospitalDetailController" customModule="CovidHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lEX-Cc-3Q9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="1Nq-hI-KVS">
+                                <rect key="frame" x="20" y="20" width="335" height="492"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="400" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="sGH-Me-Ivv">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hospital Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJs-IW-H3O">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrN-nV-BTr">
+                                                <rect key="frame" x="167.5" y="0.0" width="167.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="400" translatesAutoresizingMaskIntoConstraints="NO" id="AjW-DO-UWs">
+                                        <rect key="frame" x="0.0" y="70.5" width="335" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLS-Hb-qy2">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhp-Kq-spi">
+                                                <rect key="frame" x="167.5" y="0.0" width="167.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cOu-sD-lmg">
+                                        <rect key="frame" x="0.0" y="141" width="335" height="271"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgM-Uq-DoF">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="271"/>
+                                                <subviews>
+                                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Iri-sP-u0E">
+                                                        <rect key="frame" x="0.0" y="0.0" width="326" height="194"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                    </mapView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="z7W-HI-NNU">
+                                        <rect key="frame" x="0.0" y="462" width="335" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nla-cI-FJC">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                                <state key="normal" title="Go Back"/>
+                                                <connections>
+                                                    <action selector="backToHospitalList:" destination="LlA-8G-B66" eventType="touchUpInside" id="uBb-v5-pNN"/>
+                                                    <segue destination="BcI-7U-hjy" kind="unwind" identifier="unwindToList" unwindAction="unwindToListWithSegue:" id="pLp-pf-MVv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="U2l-zt-uMy"/>
+                        <constraints>
+                            <constraint firstItem="1Nq-hI-KVS" firstAttribute="leading" secondItem="COC-nZ-51o" secondAttribute="leading" constant="20" id="FR6-2u-wBW"/>
+                            <constraint firstItem="1Nq-hI-KVS" firstAttribute="top" secondItem="COC-nZ-51o" secondAttribute="top" constant="20" id="PkD-rP-X9P"/>
+                            <constraint firstItem="COC-nZ-51o" firstAttribute="trailing" secondItem="1Nq-hI-KVS" secondAttribute="trailing" constant="20" id="SdG-JI-Uct"/>
+                            <constraint firstItem="COC-nZ-51o" firstAttribute="bottom" secondItem="1Nq-hI-KVS" secondAttribute="bottom" constant="135" id="pgg-Xq-ie9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="COC-nZ-51o"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kRg-4C-pjX"/>
+                    <connections>
+                        <outlet property="HospitalContactLabel" destination="OLS-Hb-qy2" id="r3e-0q-JBk"/>
+                        <outlet property="HospitalContactLabelValue" destination="Vhp-Kq-spi" id="gJo-Gq-hX2"/>
+                        <outlet property="HospitalLocationMap" destination="Iri-sP-u0E" id="15L-8O-ajX"/>
+                        <outlet property="HospitalNameLabel" destination="fJs-IW-H3O" id="Z1G-jg-cKO"/>
+                        <outlet property="HospitalNameLabelValue" destination="UrN-nV-BTr" id="QIp-M6-YBw"/>
+                        <outlet property="hospView" destination="lgM-Uq-DoF" id="mYs-cK-hQA"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="czb-QC-Dlc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Rg-Jp-zcw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="BcI-7U-hjy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1372" y="-911"/>
+            <point key="canvasLocation" x="1122" y="-912"/>
         </scene>
         <!--Hospital List-->
         <scene sceneID="RcT-uM-nan">

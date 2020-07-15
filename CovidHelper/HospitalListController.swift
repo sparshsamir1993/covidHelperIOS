@@ -36,4 +36,20 @@ class HospitalListController :  UITableViewController  {
         return cell
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "showHospital"?:
+            if let row = tableView.indexPathForSelectedRow?.row {
+                let hospital = hospitalStore.allHospitals[row]
+                let hospitalDetailController = segue.destination as! HospitalDetailController
+                hospitalDetailController.hospital = hospital
+            }
+        default:
+            preconditionFailure("Unexpected segue identifier")
+        }
+    }
+    @IBAction func unwindToList(segue: UIStoryboardSegue) {
+        tableView.reloadData()
+    }
 }
