@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C973F290-E579-4413-8B85-FBFC32EE4652"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "719A6351-5102-45C7-BCB0-77EB648E0C4A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CovidHelper/HospitalListCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "HospitalListCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "719A6351-5102-45C7-BCB0-77EB648E0C4A - deb693e34df351be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CovidHelper.HospitalListCell.nameLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "CovidHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sparshsamir/Desktop/Ios%20Project/CovidHelper/CovidHelper/HospitalListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  uuid = "719A6351-5102-45C7-BCB0-77EB648E0C4A - 594e2271788d55c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CovidHelper.HospitalListCell.nameLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "CovidHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sparshsamir/Desktop/Ios%20Project/CovidHelper/CovidHelper/HospitalListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "719A6351-5102-45C7-BCB0-77EB648E0C4A - d6bc34ccec79c2b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CovidHelper.HospitalListCell.nameLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "CovidHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sparshsamir/Desktop/Ios%20Project/CovidHelper/CovidHelper/HospitalListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "719A6351-5102-45C7-BCB0-77EB648E0C4A - aac80cd59fc39210"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CovidHelper.HospitalListCell.nameLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CovidHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sparshsamir/Desktop/Ios%20Project/CovidHelper/CovidHelper/HospitalListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "719A6351-5102-45C7-BCB0-77EB648E0C4A - 99f1295a19c2c261"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CovidHelper.HospitalListCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; CovidHelper.HospitalListCell"
+                  moduleName = "CovidHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sparshsamir/Desktop/Ios%20Project/CovidHelper/CovidHelper/HospitalListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "181">
+               </Location>
+               <Location
+                  uuid = "719A6351-5102-45C7-BCB0-77EB648E0C4A - 68ae298c9bebd100"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CovidHelper.HospitalListCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CovidHelper.HospitalListCell&gt;"
+                  moduleName = "CovidHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sparshsamir/Desktop/Ios%20Project/CovidHelper/CovidHelper/HospitalListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "119">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

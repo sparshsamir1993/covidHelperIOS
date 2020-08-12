@@ -20,7 +20,7 @@ class HospitalListController :  UITableViewController  {
         tableView.scrollIndicatorInsets = insets
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 65
-        let hospitalStore = HospitalListStore()
+        let hospitalStore = HospitalListStore() //loading the hospital store
         self.hospitalStore = hospitalStore
     }
     

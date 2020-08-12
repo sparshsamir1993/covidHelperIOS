@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 
 class HospitalDetailController: UIViewController {
-
+    
     var hospital : Hospital!
     
     @IBOutlet var HospitalNameLabel: UILabel!
@@ -43,7 +43,7 @@ class HospitalDetailController: UIViewController {
         let waterlooRegion = MKCoordinateRegion(center: waterloo, latitudinalMeters: 15000, longitudinalMeters: 5000) // using MKCoordinateRegion to set proper zoom level on waterloo
         let leftMargin:CGFloat = 00
         let topMargin:CGFloat = 00
-        let mapWidth:CGFloat = hospView.frame.size.width
+        let mapWidth:CGFloat = hospView.frame.size.width 
         let mapHeight:CGFloat = hospView.frame.size.height
         
         HospitalLocationMap.frame = CGRect(x: leftMargin, y: topMargin, width: mapWidth, height: mapHeight)
@@ -51,13 +51,11 @@ class HospitalDetailController: UIViewController {
         HospitalLocationMap.sizeThatFits(CGSize(width: 200, height: 200))
         hospView.addSubview(HospitalLocationMap)
         hospView = HospitalLocationMap
-        
         HospitalNameLabelValue.text = hospital?.name
         HospitalContactLabelValue.text = hospital?.contact
     }
     
     @IBAction func backToHospitalList(_ sender: Any) {
-        print("yayyy")
         self.performSegue(withIdentifier: "unwindToList", sender: HospitalDetailController.self)
     }
     

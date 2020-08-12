@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Hospital : NSObject {
+class Hospital : NSObject { // model for hospital
     var name : String
     var contact: String
     var id: Int

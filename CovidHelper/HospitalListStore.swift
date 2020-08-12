@@ -11,7 +11,7 @@ class HospitalListStore {
     var allHospitals = [Hospital]()
     var list : [Int : Dictionary<String, Any>] =
     [
-        1: ["name": "GRH Hospital", "contact": "987654321", "latitude": 43.462434,"longitude":-80.521932],
+        1: ["name": "GRH Hospital", "contact": "987654321", "latitude": 43.457655,"longitude":-80.512627],
         2: ["name": "victoria Hospital", "contact": "987654420321", "latitude": 43.462434,"longitude":-80.521932],
         3: ["name": "St. Mary's Hospital", "contact": "987633321","latitude": 43.439279,"longitude":-80.501635],
         4: ["name": "St. Mary's Test Center", "contact": "9876542421","latitude": 43.461801, "longitude":-80.536998]
@@ -28,7 +28,7 @@ class HospitalListStore {
     init() {
        for (id, hospital) in list {
             
-        createItem(id: id, hospital: hospital)
+        createItem(id: id, hospital: hospital) //creating new hospitals
         }
     }
 }

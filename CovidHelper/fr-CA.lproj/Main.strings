@@ -1,0 +1,72 @@
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "01m-qL-9QC"; */
+"01m-qL-9QC.normalTitle" = "SUBMITê";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "5YC-7f-I3V"; */
+"5YC-7f-I3V.text" = "Name";
+
+/* Class = "UITabBarItem"; title = "Test Centers"; ObjectID = "6AN-mr-cYf"; */
+"6AN-mr-cYf.title" = "Test Centers";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "7Ce-1A-3Zq"; */
+"7Ce-1A-3Zq.normalTitle" = "SUBMIT";
+
+/* Class = "UITabBarItem"; title = "Questions"; ObjectID = "I2r-8J-B3k"; */
+"I2r-8J-B3k.title" = "Questions";
+
+/* Class = "UILabel"; text = "Please fill in name"; ObjectID = "JyI-ZK-KfI"; */
+"JyI-ZK-KfI.text" = "Please fill in name";
+
+/* Class = "UILabel"; text = "Do you have sore headache, muscle ache, vomitting?"; ObjectID = "LbI-7B-ead"; */
+"LbI-7B-ead.text" = "Do you have sore headache, muscle ache, vomitting?";
+
+/* Class = "UIButton"; normalTitle = "Go Back"; ObjectID = "Nla-cI-FJC"; */
+"Nla-cI-FJC.normalTitle" = "Go Back";
+
+/* Class = "UILabel"; text = "Contact"; ObjectID = "OLS-Hb-qy2"; */
+"OLS-Hb-qy2.text" = "Contact";
+
+/* Class = "UILabel"; text = "Are you experiencing difficulty breathing, chest pain or staying concious ?"; ObjectID = "Okv-fo-UJZ"; */
+"Okv-fo-UJZ.text" = "Are you experiencing difficulty breathing, chest pain or staying concious ?";
+
+/* Class = "UILabel"; text = "In the past 10 days have you experienced fever, sore throat, runny nose?"; ObjectID = "QNL-6v-K9h"; */
+"QNL-6v-K9h.text" = "In the past 10 days in france have you experienced fever, sore throat, runny nose?";
+
+/* Class = "UITabBarItem"; title = "Hospital List"; ObjectID = "Qe6-6h-ZlM"; */
+"Qe6-6h-ZlM.title" = "Hospital List";
+
+/* Class = "UINavigationItem"; title = "Hospital Detail"; ObjectID = "R70-CQ-Kbi"; */
+"R70-CQ-Kbi.title" = "Hospital Detail";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "UrN-nV-BTr"; */
+"UrN-nV-BTr.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Personal Info"; ObjectID = "VPS-7X-zzJ"; */
+"VPS-7X-zzJ.title" = "Personal Info";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Vhp-Kq-spi"; */
+"Vhp-Kq-spi.text" = "Label";
+
+/* Class = "UILabel"; text = "Date of Birth"; ObjectID = "cPB-Mx-trD"; */
+"cPB-Mx-trD.text" = "Date of Birth";
+
+/* Class = "UILabel"; text = "Contact"; ObjectID = "fJO-ws-nMb"; */
+"fJO-ws-nMb.text" = "Contact";
+
+/* Class = "UILabel"; text = "Hospital Name"; ObjectID = "fJs-IW-H3O"; */
+"fJs-IW-H3O.text" = "Hospital Name";
+
+/* Class = "UINavigationItem"; title = "Hospital List"; ObjectID = "fnm-o3-QgB"; */
+"fnm-o3-QgB.title" = "Hospital List";
+
+/* Class = "UILabel"; text = "Did you return from travel outside of Canada withing the last 14 days or had close contact with someone tested positive of COVID-19?"; ObjectID = "jrS-Pt-dtD"; */
+"jrS-Pt-dtD.text" = "Did you return from travel outside of Canada withing the last 14 days or had close contact with someone tested positive of COVID-19?";
+
+/* Class = "UIBarButtonItem"; title = "back"; ObjectID = "pGt-ZY-CM2"; */
+"pGt-ZY-CM2.title" = "back";
+
+/* Class = "UILabel"; text = "COVID HELPER"; ObjectID = "rOd-UZ-oax"; */
+"rOd-UZ-oax.text" = "COVID HELPER";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "t4w-H4-g21"; */
+"t4w-H4-g21.text" = "Name";
