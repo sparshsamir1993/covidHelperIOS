@@ -39,7 +39,7 @@ class HospitalDetailController: UIViewController {
         HospitalLocationMap = MKMapView()
         HospitalLocationMap.isZoomEnabled = true
         let waterloo: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude:hospital.latitude,longitude:hospital.longitude)
-        HospitalLocationMap = addCustomAnnotation(coordinates: waterloo, named: hospital.name, onMap: HospitalLocationMap)
+        HospitalLocationMap = addCustomAnnotation(coordinates: waterloo, named: hospital.name!, onMap: HospitalLocationMap)
         let waterlooRegion = MKCoordinateRegion(center: waterloo, latitudinalMeters: 15000, longitudinalMeters: 5000) // using MKCoordinateRegion to set proper zoom level on waterloo
         let leftMargin:CGFloat = 00
         let topMargin:CGFloat = 00
