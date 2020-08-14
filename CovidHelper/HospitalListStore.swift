@@ -89,8 +89,8 @@ class HospitalListStore {
                 
                 let hospitalIDs = hospitals.map {return $0.objectID}
                 let viewContext = self.persistentContainer.viewContext
-                let viewContextPhotos = hospitalIDs.map {return viewContext.object(with: $0)} as! [Hospital]
-                completion(.success(viewContextPhotos))
+                let viewContextHospitals = hospitalIDs.map {return viewContext.object(with: $0)} as! [Hospital]
+                completion(.success(viewContextHospitals))
             case.failure:
                 print("fail")
                 completion(result)

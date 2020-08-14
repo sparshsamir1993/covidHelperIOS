@@ -21,18 +21,6 @@ struct HospitalAPI {
     
     private static func HospitalAPIURL() -> URL {
         var components =  URLComponents(string: baseURLString)!
-//        var queryItems = [URLQueryItem]()
-//        let baseParams = [
-//            
-//            "format": "json",
-//            "nojsoncallback":"1",
-//            
-//        ]
-//        for(key,value) in baseParams {
-//            let item=URLQueryItem(name: key, value: value)
-//            queryItems.append(item)
-//        }
-//        components.queryItems = queryItems
         return components.url!
     }
     
@@ -60,7 +48,14 @@ struct HospitalAPI {
             var finalHospitals = [Hospital]()
             for hospitalJSON in hospitalsArray {
                 if let currentHospital = hospital(fromJSON: hospitalJSON, into: context) {
-                    finalHospitals.append(currentHospital)
+                    print("hosp id is")
+                    print(currentHospital.hospitalID)
+                    let arr = finalHospitals.filter{ $0.hospitalID == currentHospital.hospitalID }
+                    if (arr.count == 0){
+                        finalHospitals.append(currentHospital)
+                    }
+                        
+
                 }
             }
             if finalHospitals.isEmpty && !hospitalsArray.isEmpty {
@@ -74,6 +69,8 @@ struct HospitalAPI {
     }
     
     static func hospital(fromJSON json: [String: Any], into context: NSManagedObjectContext) -> Hospital?{
+        print(json["id"])
+        print(json["name"])
         guard
             let hospitalID = json["id"] as? String,
             let name = json["name"] as? String,
@@ -81,6 +78,7 @@ struct HospitalAPI {
             let latitude = json["latitude"] as? Double,
             let longitude = json["longitude"] as? Double
         else {
+            print("somr p[roblem")
                 return nil
         }
         
@@ -88,24 +86,25 @@ struct HospitalAPI {
         let predicate = NSPredicate(format: "\(#keyPath(Hospital.hospitalID)) == \(hospitalID)")
         fetchRequest.predicate = predicate
         
-        var fetchedPhotos: [Hospital]?
+        var fetchedHospitals: [Hospital]?
         context.performAndWait {
-            fetchedPhotos = try? fetchRequest.execute()
+            fetchedHospitals = try? fetchRequest.execute()
         }
-        if let existingPhoto = fetchedPhotos?.first {
-            return existingPhoto
+        if let existingHospital = fetchedHospitals?.first {
+            return existingHospital
         }
         
-        //return Photo(title: title, remoteURL: url, photoID: photoID, dateTaken: dateTaken)
-        var photo: Hospital!
+        
+        var hospital: Hospital!
         context.performAndWait {
-            photo = Hospital(context: context)
-            photo.name = name
-            photo.contact = contact
-            photo.latitude = latitude
-            photo.longitude = longitude
+            hospital = Hospital(context: context)
+            hospital.name = name
+            hospital.contact = contact
+            hospital.latitude = latitude
+            hospital.longitude = longitude
+            hospital.hospitalID = hospitalID
         }
-        return photo
+        return hospital
     }
     
 }

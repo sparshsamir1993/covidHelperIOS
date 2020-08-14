@@ -33,6 +33,7 @@ class HospitalListController :  UITableViewController  {
         
         }
     }
+    
     private func updateDataSource() {
         
         hospitalStore.fetchAllHospitals  {
